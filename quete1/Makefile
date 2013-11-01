@@ -6,6 +6,7 @@ SRC	= main.c			\
 	display_prompt.c		\
 	initialization_hero.c		\
 	initialization_monster.c	\
+	process_action.c		\
 	readline.c
 
 OBJ	= $(SRC:.c=.o)

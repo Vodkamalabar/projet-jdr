@@ -5,14 +5,14 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 22:40:03 2013 BULOT Julien
-** Last update Fri Nov  1 22:42:50 2013 BULOT Julien
+** Last update Fri Nov  1 23:04:13 2013 BULOT Julien
 */
 
 #include "my.h"
 #include "quete1.h"
 
-void	display_prompt()
+void	display_prompt(t_hero *hero)
 {
   my_putstr("Your turn> ");
-  readLine();
+  process_action(readLine(), hero);
 }

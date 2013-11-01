@@ -2,7 +2,8 @@ NAME	= quete1
 
 CC	= gcc
 
-SRC	= main.c
+SRC	= main.c \
+	initialization.c
 
 OBJ	= $(SRC:.c=.o)
 
@@ -10,14 +11,14 @@ CFLAGS	+= -W -Wall -Wextra -Werror
 CFLAGS	+= -ansi -pedantic
 CFLAGS	+= -I.
 
-LDFLAGS	=
+LDFLAGS	= -L. -lmy
 
 RM	= rm -f
 
 all	: $(NAME)
 
 $(NAME)	: $(OBJ)
-	$(CC) -o $(NAME) $(OBJ)
+	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
 clean	:
 	$(RM) $(OBJ) *~

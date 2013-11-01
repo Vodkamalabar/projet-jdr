@@ -1,45 +1,33 @@
 /*
-** my.h for my in /Users/leon/cheval_a
+** my.h for quete1 in /Users/julienbulot/Documents/functions_libmy
 ** 
-** Made by CHEVALLIER Alain
-** Login   <cheval_a@etna-alternance.net>
+** Made by BULOT Julien
+** Login   <bulot_j@etna-alternance.net>
 ** 
-** Started on  Wed Oct 30 11:26:13 2013 CHEVALLIER Alain
-** Last update Thu Oct 31 20:15:05 2013 CHEVALLIER Alain
+** Started on  Fri Nov  1 20:21:53 2013 BULOT Julien
+** Last update Fri Nov  1 20:30:08 2013 BULOT Julien
 */
 
 #ifndef __MY_H__
-
 # define __MY_H__
 
-void    my_putchar(char c);
-int     my_isneg(int n);
-int     my_put_nbr(int nb);
-int     my_swap(int *a, int *b);
-int     my_putstr(char *str);
-int     my_strlen(char *str);
-int     my_getnbr(char *str);
-void    my_sort_int_tab(int *tab, int size);
-int     my_power_rec(int nb, int power);
-int     my_square_root(int nb);
-int     my_is_prime(int nombre);
-int     my_find_prime_sup(int nb);
-char    *my_strcpy(char *dest, char *src);
-char    *my_strncpy(char *dest, char *src, int n);
-char    *my_revstr(char *str);  
-char    *my_strstr(char *str, char *to_find);
-int     my_strcmp(char *s1, char *s2);
-int     my_strncmp(char *s1, char *s2, int n);
-char    *my_strupcase(char *str);
-char    *my_strlowcase(char *str);
-char    *my_strcapitalize(char *str);
-int     my_str_isalpha(char *str);
-int     my_str_isnum(char *str);
-int     my_str_islower(char *str);
-int     my_str_isupper(char *str);
-int     my_str_isprintable(char *str);
-int     my_showstr(char *str);
-char    *my_strcat(char *str1, char *str2);
-char    *my_strncat(char *str1, char *str2, int n);
-int     my_strlcat(char *str1, char *str2, int n);
+char		*my_revstr(char *str);
+char		*my_strcpy(char *s1, const char *s2);
+char		*my_strncpy(char *s1, const char *s2, unsigned int n);
+char		my_is_prime(unsigned int nombre);
+int		my_getnbr(const char *str);
+int		my_putchar(int c);
+int		my_strcmp(const char *s1, const char *s2);
+int		xwrite(int fildes, const void *buf, unsigned int nbyte);
+unsigned int	my_find_prime_sup(unsigned int nb);
+unsigned int	my_power_rec(int nb, int power);
+unsigned int	my_strlen(const char *s);
+unsigned short	my_square_root(unsigned int nb);
+void		*xmalloc(unsigned int size);
+void		my_isneg(int n);
+void		my_put_nbr(int nb);
+void		my_putstr(const char *str);
+void		my_sort_int_tab(int *tab, unsigned int size);
+void		my_swap(int *a, int *b);
+
 #endif

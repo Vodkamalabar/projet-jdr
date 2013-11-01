@@ -5,15 +5,23 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:43:44 2013 BULOT Julien
-** Last update Fri Nov  1 19:56:31 2013 BULOT Julien
+** Last update Fri Nov  1 20:53:15 2013 BULOT Julien
 */
 
 #include <stdlib.h>
 #include "my.h"
 #include "quete1.h"
 
-int	main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
-  
+  t_hero	*hero;
+
+  if (argc == 1)
+    {
+      my_putstr("USAGE: <-n> <Player name>\n");
+      return (EXIT_FAILURE);
+    }
+  hero = NULL;
+  initialization(hero, argv);
   return (EXIT_SUCCESS);
 }

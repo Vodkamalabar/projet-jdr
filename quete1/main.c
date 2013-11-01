@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:43:44 2013 BULOT Julien
-** Last update Fri Nov  1 21:09:46 2013 BULOT Julien
+** Last update Fri Nov  1 21:25:59 2013 BULOT Julien
 */
 
 #include <stdlib.h>
@@ -15,6 +15,7 @@
 int		main(int argc, char **argv)
 {
   t_hero	*hero;
+  t_monster	*monster;
 
   if (argc == 1)
     {
@@ -22,6 +23,8 @@ int		main(int argc, char **argv)
       return (EXIT_FAILURE);
     }
   hero = NULL;
+  monster = NULL;
   initialization_hero(hero, argv);
+  initialization_monster(monster);
   return (EXIT_SUCCESS);
 }

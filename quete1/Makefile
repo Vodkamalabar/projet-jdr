@@ -3,7 +3,8 @@ NAME	= quete1
 CC	= gcc
 
 SRC	= main.c \
-	initialization_hero.c
+	initialization_hero.c \
+	initialization_monster.c
 
 OBJ	= $(SRC:.c=.o)
 

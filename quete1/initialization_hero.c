@@ -5,13 +5,13 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 20:49:26 2013 BULOT Julien
-** Last update Fri Nov  1 20:53:59 2013 BULOT Julien
+** Last update Fri Nov  1 21:09:41 2013 BULOT Julien
 */
 
 #include "my.h"
 #include "quete1.h"
 
-void	initialization(t_hero *hero, char **argv)
+void	initialization_hero(t_hero *hero, char **argv)
 {
   hero = xmalloc(sizeof(*hero));
   if (!my_strcmp(argv[1], "-n"))
@@ -32,4 +32,6 @@ void	initialization(t_hero *hero, char **argv)
       hero->name = xmalloc(7 * sizeof(hero->name));
       my_strcpy(hero->name, "(null)");
     }
+  hero->pv = 100;
+  hero->pm = 30;
 }

@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:43:44 2013 BULOT Julien
-** Last update Fri Nov  1 20:53:15 2013 BULOT Julien
+** Last update Fri Nov  1 21:09:46 2013 BULOT Julien
 */
 
 #include <stdlib.h>
@@ -22,6 +22,6 @@ int		main(int argc, char **argv)
       return (EXIT_FAILURE);
     }
   hero = NULL;
-  initialization(hero, argv);
+  initialization_hero(hero, argv);
   return (EXIT_SUCCESS);
 }

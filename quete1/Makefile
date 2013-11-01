@@ -2,9 +2,11 @@ NAME	= quete1
 
 CC	= gcc
 
-SRC	= main.c \
-	initialization_hero.c \
-	initialization_monster.c
+SRC	= main.c			\
+	display_prompt.c		\
+	initialization_hero.c		\
+	initialization_monster.c	\
+	readline.c
 
 OBJ	= $(SRC:.c=.o)
 

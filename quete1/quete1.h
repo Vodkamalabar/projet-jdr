@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:35:53 2013 BULOT Julien
-** Last update Fri Nov  1 21:20:25 2013 BULOT Julien
+** Last update Fri Nov  1 22:41:39 2013 BULOT Julien
 */
 
 #ifndef __QUETE1_H__
@@ -25,6 +25,8 @@ typedef struct	s_monster
   int		pm;
 }		t_monster;
 
+char	*readLine();
+void	display_prompt();
 void	initialization_hero(t_hero *hero, char **argv);
 void	initialization_monster(t_monster *monster);
 

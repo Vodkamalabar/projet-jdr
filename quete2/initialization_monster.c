@@ -5,9 +5,11 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 21:21:37 2013 BULOT Julien
-** Last update Fri Nov  1 23:08:15 2013 BULOT Julien
+** Last update Sat Nov  2 16:16:36 2013 BULOT Julien
 */
 
+#include <stdlib.h>
+#include <time.h>
 #include "my.h"
 #include "quete1.h"
 
@@ -18,5 +20,7 @@ t_monster	*initialization_monster(t_monster *monster)
   my_strcpy(monster->name, "Monster");
   monster->pv = 75;
   monster->pm = 20;
+  srand(time(NULL));
+  monster->number = rand() % 3 + 1;
   return (monster);
 }

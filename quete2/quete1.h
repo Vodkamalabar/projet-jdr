@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:35:53 2013 BULOT Julien
-** Last update Sat Nov  2 14:37:13 2013 BULOT Julien
+** Last update Sat Nov  2 15:51:32 2013 BULOT Julien
 */
 
 #ifndef __QUETE1_H__
@@ -17,6 +17,7 @@ typedef struct	s_hero
   int		pv;
   int		pv_max;
   int		pm;
+  int		pm_max;
   int		potion;
   int		ether;
 }		t_hero;
@@ -24,6 +25,7 @@ typedef struct	s_hero
 typedef struct	s_monster
 {
   char		*name;
+  int		number;
   int		pv;
   int		pm;
 }		t_monster;
@@ -40,10 +42,12 @@ void		attack(t_hero *hero, t_monster *monster);
 void		attack_monster(t_hero * hero, t_monster *monster);
 void		bite(t_hero *hero, t_monster *monster);
 void		doom(t_hero *hero, t_monster *monster);
+void		ether(t_hero * hero);
 void		earthquake(t_hero *hero, t_monster *monster);
 void		fire(t_hero *hero, t_monster *monster);
 void		heal(t_hero *hero);
 void		libra(t_hero * hero, t_monster *monster);
+void		potion(t_hero *hero);
 void		slash(t_hero *hero, t_monster *monsterOB);
 void		stat(t_hero *hero);
 void		thunder(t_hero *hero, t_monster *monster);

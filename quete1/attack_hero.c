@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Sat Nov  2 10:42:51 2013 BULOT Julien
-** Last update Sat Nov  2 13:20:44 2013 BULOT Julien
+** Last update Sat Nov  2 16:18:33 2013 BULOT Julien
 */
 
 #include "my.h"
@@ -22,7 +22,10 @@ int	attack_hero(t_hero *hero, t_monster *monster, char *action)
   else if(!my_strcmp(action, "thunder") && hero->pm >= 5)
     thunder(hero, monster);
   else if(!my_strcmp(action, "stat"))
+    {
     stat(hero);
+    return (1);
+    }
   else if (!my_strcmp(action, "libra") && hero->pm)
     libra(hero, monster);
   if (cant_attack(hero, action))

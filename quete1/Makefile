@@ -10,6 +10,7 @@ SRC	= main.c			\
 	initialization_monster.c	\
 	libra.c				\
 	process_action.c		\
+	quit.c				\
 	readline.c			\
 	slash.c				\
 	stat.c				\

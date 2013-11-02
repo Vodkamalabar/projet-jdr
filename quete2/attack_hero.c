@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Sat Nov  2 10:42:51 2013 BULOT Julien
-** Last update Sat Nov  2 14:06:57 2013 CHEVALLIER Alain
+** Last update Sat Nov  2 14:37:53 2013 BULOT Julien
 */
 
 #include "my.h"
@@ -25,7 +25,7 @@ int	attack_hero(t_hero *hero, t_monster *monster, char *action)
     stat(hero);
   else if (!my_strcmp(action, "libra") && hero->pm)
     libra(hero, monster);
-  else if (!my_strmp(action, "heal") && hero->pm >= 3)
+  else if (!my_strcmp(action, "heal") && hero->pm >= 3)
     heal(hero);
   if (cant_attack(hero, action))
     return (1);

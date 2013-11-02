@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 20:49:26 2013 BULOT Julien
-** Last update Sat Nov  2 14:02:54 2013 CHEVALLIER Alain
+** Last update Sat Nov  2 14:33:05 2013 BULOT Julien
 */
 
 #include "my.h"
@@ -33,6 +33,7 @@ t_hero	*initialization_hero(t_hero *hero, char **argv)
       my_strcpy(hero->name, "(null)");
     }
   hero->pv = 100;
+  hero->pv_max = 100;
   hero->pm = 30;
   hero->potion = 5;
   hero->ether = 5;

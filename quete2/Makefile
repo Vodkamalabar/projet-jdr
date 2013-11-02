@@ -5,7 +5,7 @@
 ## Login   <bulot_j@etna-alternance.net>
 ## 
 ## Started on  Sat Nov  2 13:32:21 2013 BULOT Julien
-## Last update Sat Nov  2 13:32:26 2013 BULOT Julien
+## Last update Sat Nov  2 14:37:27 2013 BULOT Julien
 ##
 
 NAME	= ragnarok
@@ -22,6 +22,7 @@ SRC	= main.c			\
 	doom.c				\
 	earthquake.c			\
 	fire.c				\
+	heal.c				\
 	initialization_hero.c		\
 	initialization_monster.c	\
 	libra.c				\

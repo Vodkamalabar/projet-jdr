@@ -5,11 +5,11 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Sat Nov  2 09:45:49 2013 BULOT Julien
-** Last update Sat Nov  2 09:58:28 2013 BULOT Julien
+** Last update Sat Nov  2 13:33:08 2013 BULOT Julien
 */
 
 #include <stdlib.h>
-#include <stime.h>
+#include <time.h>
 #include "quete1.h"
 
 void	attack_monster(t_hero *hero, t_monster *monster)
@@ -17,12 +17,14 @@ void	attack_monster(t_hero *hero, t_monster *monster)
   int	attack;
 
   srand(time(NULL));
-  attack = rand() % 3;
+  if (monster->pm >= 5)
+    attack = rand() % 3;
+  else
+    attack = rand() % 2;
   if (attack == 0)
     bite(hero, monster);
   else if (attack == 1)
     earthquake(hero, monster);
-  else
+  else if (attack == 2 && monster->pm >= 5)
     doom(hero, monster);
-  display_prompt(hero, monster);
 }

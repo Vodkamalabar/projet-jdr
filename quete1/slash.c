@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 23:36:09 2013 BULOT Julien
-** Last update Fri Nov  1 23:51:16 2013 BULOT Julien
+** Last update Sat Nov  2 10:12:53 2013 BULOT Julien
 */
 
 #include "my.h"
@@ -19,5 +19,5 @@ void	slash(t_hero *hero, t_monster *monster)
   my_putstr(hero->name);
   my_putstr(" use slash\n");
   my_putstr(monster->name);
-  my_putstr(" lose 10 PV\nhero lose 2 PV\n\n");
+  my_putstr(" lose 10 PV\nHero lose 2 PV\n\n");
 }

@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 23:28:31 2013 BULOT Julien
-** Last update Fri Nov  1 23:47:51 2013 BULOT Julien
+** Last update Sat Nov  2 10:12:35 2013 BULOT Julien
 */
 
 #include "my.h"
@@ -19,5 +19,5 @@ void	fire(t_hero *hero, t_monster *monster)
   my_putstr(hero->name);
   my_putstr(" use fire\n");
   my_putstr(monster->name);
-  my_putstr(" lose 10 PV\nhero lose 3 PM\n\n");
+  my_putstr(" lose 10 PV\nHero lose 3 PM\n\n");
 }

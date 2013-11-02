@@ -3,11 +3,17 @@ NAME	= quete1
 CC	= gcc
 
 SRC	= main.c			\
+	attack.c			\
 	display_prompt.c		\
+	fire.c				\
 	initialization_hero.c		\
 	initialization_monster.c	\
+	libra.c				\
 	process_action.c		\
-	readline.c
+	readline.c			\
+	slash.c				\
+	stat.c				\
+	thunder.c
 
 OBJ	= $(SRC:.c=.o)
 

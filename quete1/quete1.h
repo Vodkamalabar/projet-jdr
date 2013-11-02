@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:35:53 2013 BULOT Julien
-** Last update Fri Nov  1 23:08:50 2013 BULOT Julien
+** Last update Fri Nov  1 23:52:06 2013 BULOT Julien
 */
 
 #ifndef __QUETE1_H__
@@ -26,9 +26,15 @@ typedef struct	s_monster
 }		t_monster;
 
 char		*readLine();
-void		display_prompt(t_hero *hero);
 t_hero		*initialization_hero(t_hero *hero, char **argv);
 t_monster	*initialization_monster(t_monster *monster);
-void		process_action(char *action, t_hero * here);
+void		attack(t_hero *hero, t_monster *monster);
+void		fire(t_hero *hero, t_monster *monster);
+void		libra(t_monster *monster);
+void		slash(t_hero *hero, t_monster *monsterOB);
+void		stat(t_hero *hero);
+void		thunder(t_hero *hero, t_monster *monster);
+void		display_prompt(t_hero *hero, t_monster *monster);
+void		process_action(char *action, t_hero * hero, t_monster *monster);
 
 #endif

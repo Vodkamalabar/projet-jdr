@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:43:44 2013 BULOT Julien
-** Last update Fri Nov  1 23:09:15 2013 BULOT Julien
+** Last update Fri Nov  1 23:17:16 2013 BULOT Julien
 */
 
 #include <stdlib.h>
@@ -28,6 +28,6 @@ int		main(int argc, char **argv)
   monster = initialization_monster(monster);
   my_putstr(hero->name);
   my_putstr("\033[2J\033[0;0f");
-  display_prompt(hero);
+  display_prompt(hero, monster);
   return (EXIT_SUCCESS);
 }

@@ -1,0 +1,31 @@
+/*
+** win.c for quete1 in /Users/julienbulot/Documents/projet-jdr/quete1
+** 
+** Made by BULOT Julien
+** Login   <bulot_j@etna-alternance.net>
+** 
+** Started on  Sat Nov  2 10:54:30 2013 BULOT Julien
+** Last update Sat Nov  2 12:40:12 2013 BULOT Julien
+*/
+
+#include "my.h"
+#include "quete1.h"
+
+int	win(t_hero *hero, t_monster *monster)
+{
+  if (hero->pv <= 0)
+    {
+      my_putstr("Hero ");
+      my_putstr(hero->name);
+      my_putstr(" is dead\nYou lose\n");
+      return (1);
+    }
+  else if (monster->pv <= 0)
+    {
+      my_putstr("Hero ");
+      my_putstr(hero->name);
+      my_putstr(" has defeated the monster\nCongratulation, you won !!\n");
+      return (1);
+    }
+  return (0);
+}

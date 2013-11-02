@@ -4,6 +4,7 @@ CC	= gcc
 
 SRC	= main.c			\
 	attack.c			\
+	attack_monster.c		\
 	display_prompt.c		\
 	fire.c				\
 	initialization_hero.c		\

@@ -5,7 +5,7 @@
 ## Login   <bulot_j@etna-alternance.net>
 ## 
 ## Started on  Sat Nov  2 13:32:21 2013 BULOT Julien
-## Last update Sat Nov  2 15:15:13 2013 BULOT Julien
+## Last update Sat Nov  2 16:51:47 2013 BULOT Julien
 ##
 
 NAME	= ragnarok
@@ -27,7 +27,9 @@ SRC	= main.c			\
 	initialization_hero.c		\
 	initialization_monster.c	\
 	libra.c				\
+	monster_appear.c		\
 	potion.c			\
+	potion_ether.c			\
 	process_action.c		\
 	readline.c			\
 	slash.c				\

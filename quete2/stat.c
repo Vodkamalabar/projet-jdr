@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 23:40:01 2013 BULOT Julien
-** Last update Sat Nov  2 12:51:47 2013 BULOT Julien
+** Last update Sat Nov  2 17:00:25 2013 BULOT Julien
 */
 
 #include "my.h"
@@ -19,5 +19,9 @@ void	stat(t_hero *hero)
   my_put_nbr(hero->pv);
   my_putstr("\n|--PM : ");
   my_put_nbr(hero->pm);
+  my_putstr("\n|--Potion : ");
+  my_put_nbr(hero->potion);
+  my_putstr("\n|--Ether : ");
+  my_put_nbr(hero->ether);
   my_putstr("\n\n");
 }

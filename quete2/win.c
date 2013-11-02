@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Sat Nov  2 10:54:30 2013 BULOT Julien
-** Last update Sat Nov  2 16:16:57 2013 BULOT Julien
+** Last update Sat Nov  2 16:50:26 2013 BULOT Julien
 */
 
 #include "my.h"
@@ -22,17 +22,17 @@ int	win(t_hero *hero, t_monster *monster)
     }
   else if (monster->pv <= 0)
     {
+      my_putstr("Hero ");
+      my_putstr(hero->name);
+      my_putstr(" killed a monster\n");
       monster->number--;
-      if (monster->number)
+      if (!monster_appear(monster))
 	{
 	  my_putstr("Hero ");
 	  my_putstr(hero->name);
-	  my_putstr(" killed a monster\nA new monster appear\n");
+	  my_putstr(" has defeated the monsters\nCongratulation, you won !!\n");
+	  return (1);
 	}
-      my_putstr("Hero ");
-      my_putstr(hero->name);
-      my_putstr(" has defeated the monster\nCongratulation, you won !!\n");
-      return (1);
     }
   return (0);
 }

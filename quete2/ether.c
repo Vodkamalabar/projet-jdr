@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Sat Nov  2 15:11:15 2013 BULOT Julien
-** Last update Sat Nov  2 15:54:26 2013 BULOT Julien
+** Last update Sat Nov  2 17:45:18 2013 BULOT Julien
 */
 
 
@@ -19,9 +19,11 @@ void	ether(t_hero *hero)
   magic = 12;
   if (hero->pm + magic > hero->pm_max)
     {
-      hero->pm = hero->pm_max;
       magic = hero->pm_max - hero->pm;
+      hero->pm = hero->pm_max;
     }
+  else
+    hero->pm += magic;
   hero->ether--;
   my_putstr("Hero ");
   my_putstr(hero->name);

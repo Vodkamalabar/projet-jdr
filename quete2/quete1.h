@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:35:53 2013 BULOT Julien
-** Last update Sat Nov  2 15:51:32 2013 BULOT Julien
+** Last update Sat Nov  2 16:51:19 2013 BULOT Julien
 */
 
 #ifndef __QUETE1_H__
@@ -34,6 +34,8 @@ char		*readLine();
 int		attack_hero(t_hero *hero, t_monster *monster, char *action);
 int		cant_attack(t_hero *hero, char *action);
 int		display_prompt(t_hero *hero, t_monster *monster);
+int		monster_appear(t_monster *monster);
+int		potion_ether(t_hero *hero, char *action);
 int		process_action(char *action, t_hero * hero, t_monster *monster);
 int		win(t_hero *hero, t_monster *monster);
 t_hero		*initialization_hero(t_hero *hero, char **argv);

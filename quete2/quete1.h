@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov  1 19:35:53 2013 BULOT Julien
-** Last update Sat Nov  2 13:21:57 2013 BULOT Julien
+** Last update Sat Nov  2 14:03:47 2013 CHEVALLIER Alain
 */
 
 #ifndef __QUETE1_H__
@@ -16,6 +16,8 @@ typedef struct	s_hero
   char		*name;
   int		pv;
   int		pm;
+  int		potion;
+  int		ether;
 }		t_hero;
 
 typedef struct	s_monster

@@ -5,7 +5,7 @@
 ** Login   <bulot_j@etna-alternance.net>
 ** 
 ** Started on  Sat Nov  2 09:13:07 2013 BULOT Julien
-** Last update Sat Nov  2 17:33:43 2013 BULOT Julien
+** Last update Sat Nov  2 17:54:34 2013 BULOT Julien
 */
 
 #include "my.h"
@@ -32,8 +32,8 @@ int	process_action(char *action, t_hero *hero, t_monster *monster)
       my_putchar('\n');
       return (0);
     }
-  if (!attack_hero(hero, monster, action))
-    attack_monster(hero, monster);
+  if (!attack_hero(hero, monster, action, critic()))
+    attack_monster(hero, monster, critic());
   if (win(hero, monster))
     return (1);
   return (0);

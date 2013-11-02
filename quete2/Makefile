@@ -5,7 +5,7 @@
 ## Login   <bulot_j@etna-alternance.net>
 ## 
 ## Started on  Sat Nov  2 13:32:21 2013 BULOT Julien
-## Last update Sat Nov  2 16:51:47 2013 BULOT Julien
+## Last update Sat Nov  2 17:54:09 2013 BULOT Julien
 ##
 
 NAME	= ragnarok
@@ -18,6 +18,7 @@ SRC	= main.c			\
 	attack_monster.c		\
 	bite.c				\
 	cant_attack.c			\
+	critic.c			\
 	display_prompt.c		\
 	doom.c				\
 	earthquake.c			\
